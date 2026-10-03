@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ragafy – Carnatic lessons you can sing, see and play</title>
+<meta name="description" content="Ragafy: Carnatic vocal practice with real-time pitch feedback, and lesson videos you can sing along with and play on a keyboard, in every raga and at any Sa.">
+<meta property="og:title" content="Ragafy – Sing it. See it. Play it.">
+<meta property="og:description" content="Carnatic lessons in every raga and at any Sa: videos to sing along with, and an app that shows your pitch as you sing.">
+<meta property="og:image" content="video.jpg">
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --page: #132120; --card: #1C2C2A; --ink: #ECE4D6; --muted: #B8AE9F;
+    --heading: #F1E6D0; --accent: #6DAFA2; --brass: #D9B97F; --gold: #DDB35A;
+    --line: #334542; --teal: #286660; --on-gold: #3A2A0F;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--page); color: var(--ink);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 980px; margin: 0 auto; padding: 0 20px 72px; }
+  h1, h2, h3 { font-family: Lora, Georgia, "Times New Roman", serif; color: var(--heading); font-weight: 600; line-height: 1.2; }
+  a { color: var(--accent); }
+  img { max-width: 100%; height: auto; display: block; }
+
+  .hero { background: var(--teal); margin: 0 -20px; padding: 56px 20px 48px; text-align: center; }
+  .hero img { width: 104px; height: 104px; border-radius: 24px; margin: 0 auto 20px; }
+  .hero h1 { font-size: 46px; margin: 0; color: #FBF7F0; }
+  .hero .tagline { font-size: 24px; color: var(--gold); margin: 8px 0 6px; font-weight: 600; }
+  .hero p { margin: 0 auto; max-width: 620px; color: #E6EFEC; }
+
+  .buttons { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 28px; }
+  .button {
+    display: inline-flex; flex-direction: column; align-items: center; justify-content: center;
+    min-width: 200px; padding: 12px 22px; border-radius: 14px; text-decoration: none;
+    font-weight: 600; line-height: 1.25;
+  }
+  .button small { font-weight: 500; font-size: 13px; opacity: .85; }
+  .button.primary { background: var(--gold); color: var(--on-gold); }
+  .button.soon { background: rgba(255,255,255,.10); color: #FBF7F0; border: 1px solid rgba(255,255,255,.28); cursor: default; }
+
+  h2 { font-size: 28px; margin: 56px 0 8px; }
+  .lead { color: var(--muted); margin: 0 0 20px; max-width: 700px; }
+  .split { display: grid; grid-template-columns: 1.6fr 1fr; gap: 28px; align-items: center; }
+  .split.phone { grid-template-columns: 1fr 260px; }
+  .frame { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: var(--card); }
+  .frame.phone { border-radius: 28px; max-width: 260px; justify-self: center; }
+  ul.points { list-style: none; padding: 0; margin: 0; }
+  ul.points li { padding: 10px 0 10px 30px; position: relative; border-bottom: 1px solid var(--line); }
+  ul.points li:last-child { border-bottom: 0; }
+  ul.points li::before { content: ""; position: absolute; left: 4px; top: 21px; width: 10px; height: 10px; border-radius: 50%; background: var(--gold); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 8px 24px 20px; margin-top: 24px; }
+  .card h2 { margin-top: 20px; font-size: 24px; }
+  .ragas { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 14px 0 0; list-style: none; }
+  .ragas li { border: 1px solid var(--line); border-radius: 12px; padding: 8px 14px; }
+  .ragas b { color: var(--heading); display: block; }
+  .ragas span { color: var(--muted); font-size: 14px; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+  @media (max-width: 720px) {
+    .split, .split.phone { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 38px; }
+    .hero .tagline { font-size: 21px; }
+    .button { width: 100%; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <img src="icon.png" alt="Ragafy app icon: a pitch curve and a gold dot" width="104" height="104">
+    <h1>Ragafy</h1>
+    <div class="tagline">Sing it. See it. Play it.</div>
+    <p>Carnatic lessons in every raga, at any Sa: videos to sing along with and play on a
+    keyboard, and an app that shows your pitch as you sing.</p>
+    <div class="buttons">
+      <a class="button primary" id="youtube" href="https://www.youtube.com/@RagafyApp">Watch on YouTube<small>@RagafyApp</small></a>
+      <span class="button soon" id="app-store">App Store<small>Coming soon</small></span>
+      <span class="button soon" id="google-play">Google Play<small>Coming soon</small></span>
+    </div>
+  </header>
+
+  <h2>Lesson videos</h2>
+  <p class="lead">Free on YouTube. Each exercise is sung in swaras while the melody flows as a river,
+  the tala cycle moves with it, and the same notes light up on a keyboard.</p>
+  <div class="split">
+    <div class="frame"><img src="video.jpg" alt="A lesson video: the river of the melody above a keyboard with the swara D1 lit" width="1100" height="619"></div>
+    <ul class="points">
+      <li>Sarali, Jantai, Dhattu, Upper and Lower Sthayi Varisai and the Alankaras</li>
+      <li>One exercise per video, and one video per topic with chapters</li>
+      <li>The same exercises in different ragas, with the exact swaras named</li>
+      <li>Sing along, or play along on a keyboard</li>
+    </ul>
+  </div>
+
+  <h2>The Ragafy app</h2>
+  <p class="lead">Coming soon for iPhone and Android. A video can only be watched; the app listens.</p>
+  <div class="split phone">
+    <ul class="points">
+      <li>Sing a lesson and see your pitch against every swara as you sing</li>
+      <li>Choose your own Sa and tempo, and any of the 72 melakarta ragas</li>
+      <li>A tuner for single swaras, a keyboard for every lesson, and ear training</li>
+      <li>A short daily session built from your own practice</li>
+      <li>Private: no account, no ads, no tracking; your voice never leaves your phone</li>
+    </ul>
+    <div class="frame phone"><img src="app.jpg" alt="The Ragafy app: a lesson with the singer's pitch drawn over the melody" width="414" height="900"></div>
+  </div>
+
+  <section class="card" id="practise">
+    <h2>How to practise</h2>
+    <p>You do not need to sing every exercise in every raga. Learn it well in Mayamalavagowla first,
+    then try it in Shankarabharanam, Kalyani and Kharaharapriya. Between them these four ragas use
+    all twelve notes, so the same pattern trains your ear and voice on every swara. These four are
+    only a suggestion: practise in whichever ragas you like.</p>
+    <ul class="ragas">
+      <li><b>Mayamalavagowla</b><span>S R1 G3 M1 P D1 N3</span></li>
+      <li><b>Shankarabharanam</b><span>S R2 G3 M1 P D2 N3</span></li>
+      <li><b>Kalyani</b><span>S R2 G3 M2 P D2 N3</span></li>
+      <li><b>Kharaharapriya</b><span>S R2 G2 M1 P D2 N2</span></li>
+    </ul>
+    <p class="lead" style="margin-top:16px">Ragafy is a practice companion, not a replacement for a teacher.
+    The lessons are plain notes; gamakas are best learnt from your guru.</p>
+  </section>
+
+  <footer>
+    <a href="privacy/">Privacy policy and support</a> ·
+    <a href="mailto:zeetforfun@gmail.com">zeetforfun@gmail.com</a> ·
+    <a href="https://www.youtube.com/@RagafyApp">YouTube</a>
+  </footer>
+</main>
+</body>
+</html>
